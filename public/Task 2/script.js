@@ -31,3 +31,6 @@ three = {
     pavarde: '',
     lytis: 'sraigtasparnis'
 };
+console.log("one:", one);
+console.log("two:", two);
+console.log("three:", three);

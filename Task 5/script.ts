@@ -23,7 +23,7 @@ const zaidimas = (player1: Vaskinimas, player2: Vaskinimas): string => {
   }
 };
 
-// console.log(zaidimas("scissors", "paper")); // "Player 1 laimejo"
-// console.log(zaidimas("rock", "scissors"));    // "Player 1 laimejo"
-// console.log(zaidimas("paper", "paper"));      // "Draw!"
-// console.log(zaidimas("paper", "scissors"));   // "Player 2 laimejo"
+console.log(zaidimas("scissors", "paper")); // "Player 1 laimejo"
+console.log(zaidimas("rock", "scissors"));    // "Player 1 laimejo"
+console.log(zaidimas("paper", "paper"));      // "Draw!"
+console.log(zaidimas("paper", "scissors"));   // "Player 2 laimejo"

@@ -16,3 +16,7 @@ const zaidimas = (player1, player2) => {
         return 'Player 2 laimejo';
     }
 };
+console.log(zaidimas("scissors", "paper"));
+console.log(zaidimas("rock", "scissors"));
+console.log(zaidimas("paper", "paper"));
+console.log(zaidimas("paper", "scissors"));

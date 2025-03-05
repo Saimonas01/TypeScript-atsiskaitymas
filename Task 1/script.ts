@@ -24,3 +24,12 @@ let eight: (string | number)[] = ['hi', 1];
 eight = ['bye', 2];
 eight = [1,2];
 eight = ['a','b','c'];
+
+console.log("one1:", one1);         // 654
+console.log("two1:", two1);         // true
+console.log("three1:", three1);     // true
+console.log("four:", four);         // '123'
+console.log("five:", five);         // [true, true, false]
+console.log("six:", six);           // [true, false]
+console.log("seven:", seven);
+console.log("eight:", eight);  

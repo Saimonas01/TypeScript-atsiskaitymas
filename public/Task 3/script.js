@@ -17,3 +17,6 @@ const senaMasina = {
     kilometrazas: 999999,
     surudyjesDugnas: true
 };
+console.log("dviratis:", dviratis);
+console.log("naujaMasina:", naujaMasina);
+console.log("senaMasina:", senaMasina);

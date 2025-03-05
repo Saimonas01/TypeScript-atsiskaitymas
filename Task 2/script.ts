@@ -50,3 +50,7 @@ three = {
   pavarde: '',
   lytis: 'sraigtasparnis' // error
 };
+
+console.log("one:", one);
+console.log("two:", two);
+console.log("three:", three);
