@@ -1,14 +1,14 @@
 "use strict";
 const ENDPOINT = './NBA.json';
+fetch(ENDPOINT);
 document.addEventListener("DOMContentLoaded", () => {
-    console.log("Puslapis įkrautas. Pradedame įkelti NBA duomenis...");
     fetch("./NBA.json")
         .then((response) => {
-        console.log("Gauta atsakymas iš serverio:", response);
+        console.log("Gautas atsakymas:", response);
         return response.json();
     })
         .then((data) => {
-        console.log("Duomenys iš JSON:", data);
+        console.log("Duomenys is JSON:", data);
         const output = document.getElementById("output");
         if (!output)
             return;
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const playersContainer = document.createElement("div");
             playersContainer.classList.add("players-container");
             team.players.forEach((player) => {
-                console.log("Pridedamas žaidėjas:", player.firstName, player.lastName);
+                console.log("Prideti zaideja", player.firstName, player.lastName);
                 const playerCard = document.createElement("div");
                 playerCard.classList.add("player-card");
                 const playerName = document.createElement("p");
@@ -39,5 +39,5 @@ document.addEventListener("DOMContentLoaded", () => {
             output.appendChild(teamCard);
         });
     })
-        .catch((error) => console.error("Klaida įkeliant NBA duomenis:", error));
+        .catch((error) => console.error("Klaida:", error));
 });

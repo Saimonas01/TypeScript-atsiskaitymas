@@ -8,28 +8,28 @@ let two1: boolean = true;
 let three1: boolean = true;
 let four: boolean | string = true;
 four = '123';
-let five: (number | string | boolean)[] = [1,2,3];
+let five: number[] = [1,2,3];
 five = [21,22,23,24];
-five = ['a', 'b']; 
-five = [true, true, false]; 
-let six: (number | string | boolean)[] = [1,2,3,4];
+// five = ['a', 'b']; //error
+// five = [true, true, false]; //error
+let six: number[] | string[] = [1,2,3,4];
 six = ['a','b','c','d'];
-six = ['a',2,3,'d'];
-six = [true, false]; 
-let seven: (number | string | boolean)[] = [1,2,3,4];
+// six = ['a',2,3,'d']; //error
+// six = [true, false]; //error
+let seven: (number | string)[] = [1,2,3,4];
 seven = ['a','b','c','d'];
 seven = ['a',2,3,'d'];
-seven = [true, false]; 
+// seven = [true, false]; //error
 let eight: (string | number)[] = ['hi', 1];
 eight = ['bye', 2];
-eight = [1,2];
-eight = ['a','b','c'];
+// eight = [1,2]; //error
+// eight = ['a','b','c']; //error
 
-console.log("one1:", one1);         // 654
-console.log("two1:", two1);         // true
-console.log("three1:", three1);     // true
-console.log("four:", four);         // '123'
-console.log("five:", five);         // [true, true, false]
-console.log("six:", six);           // [true, false]
+console.log("one1:", one1);
+console.log("two1:", two1);
+console.log("three1:", three1);
+console.log("four:", four);
+console.log("five:", five);
+console.log("six:", six);
 console.log("seven:", seven);
 console.log("eight:", eight);  

@@ -12,6 +12,7 @@
   min-height: 100vh;
   min-width: calc(100vw - (100vw - 100%));
   background-color: #fec631;
+  padding: 10px;
 }
 
 .headline {
