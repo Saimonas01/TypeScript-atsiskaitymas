@@ -12,7 +12,7 @@ const naujaMasina = {
 const senaMasina = {
     marke: '',
     modelis: '',
-    metai: 202555,
+    metai: 2025,
     spalva: '',
     kilometrazas: 999999,
     surudyjesDugnas: true
